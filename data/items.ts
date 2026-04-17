@@ -961,6 +961,18 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 5,
 		isNonstandard: "Past",
 	},
+	chimechite: {
+		name: "Chimechite",
+		spritenum: 498,
+		megaStone: { "Chimecho": "Chimecho-Mega" },
+		itemUser: ["Chimecho"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: 2637,
+		gen: 9,
+		isNonstandard: "Future",
+	},
 	chippedpot: {
 		name: "Chipped Pot",
 		spritenum: 720,
@@ -2530,6 +2542,30 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 796,
 		gen: 7,
 		rating: 0,
+	},
+	golisopite: {
+		name: "Golisopite",
+		spritenum: 508,
+		megaStone: { "Golisopod": "Golisopod-Mega" },
+		itemUser: ["Golisopod"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: 2645,
+		gen: 9,
+		isNonstandard: "Future",
+	},
+	golurkite: {
+		name: "Golurkite",
+		spritenum: 505,
+		megaStone: { "Golurk": "Golurk-Mega" },
+		itemUser: ["Golurk"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: 2642,
+		gen: 9,
+		isNonstandard: "Future",
 	},
 	grassgem: {
 		name: "Grass Gem",
