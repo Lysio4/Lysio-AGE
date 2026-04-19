@@ -1274,9 +1274,9 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	ninetalesite: {
 		name: "Ninetalesite",
 		spritenum: 578,
-		megaStone: "Ninetales-Alola-Mega",
-		megaEvolves: "Ninetales-Alola",
-		itemUser: ["Ninetales-Alola"],
+		megaStone: "Ninetales-Mega",
+		megaEvolves: "Ninetales",
+		itemUser: ["Ninetales", "Ninetales-Alola"],
 		onTakeItem(item, source) {
 			if (source.species.name.startsWith('Ninetales-Alola')) return false;
 			return true;
@@ -1318,7 +1318,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		spritenum: 578,
 		megaStone: "Dugtrio-Mega",
 		megaEvolves: "Dugtrio",
-		itemUser: ["Dugtrio"],
+		itemUser: ["Dugtrio", "Dugtrio-Alola"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
@@ -2408,20 +2408,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		gen: 9,
 		desc: "If held by a Cetitan, this item allows it to Mega Evolve in battle.",
 	},
-	ninetalesite: {
-		name: "Ninetalesite",
-		spritenum: 578,
-		megaStone: "Ninetales-Mega",
-		megaEvolves: "Ninetales",
-		itemUser: ["Ninetales"],
-		onTakeItem(item, source) {
-			if (source.species.name.startsWith('Ninetales')) return false;
-			return true;
-		},
-		num: -2016,
-		gen: 9,
-		desc: "If held by a Ninetales, this item allows it to Mega Evolve in battle.",
-	},
 	noctowlite: {
 		name: "Noctowlite",
 		spritenum: 578,
@@ -2533,20 +2519,6 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		num: -2024,
 		gen: 9,
 		desc: "If held by a Ogerpon, this item allows it to Mega Evolve in battle.",
-	},
-	dugtrionite: {
-		name: "Dugtrionite",
-		spritenum: 578,
-		megaStone: "Dugtrio-Alola-Mega",
-		megaEvolves: "Dugtrio-Alola",
-		itemUser: ["Dugtrio-Alola"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
-		},
-		num: -2025,
-		gen: 9,
-		desc: "If held by a Dugtrio-Alola, this item allows it to Mega Evolve in battle.",
 	},
 	farigirafite: {
 		name: "Farigirafite",

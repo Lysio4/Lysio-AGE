@@ -4,7 +4,7 @@ import {toID} from '../../../sim/dex-data';
 const ag9 = ["calyrexshadow", "gengarmega", "koraidon", "miraidon", "rayquazamega", "xerneas"];
 const uber9 = [
 	// M4A first
-	"butterfreemega", "delphoxmega", "dodriomega", "dragapultmega", "slowkinggalarmega"
+	"butterfreemega", "delphoxmega", "dodriomega", "dragapultmega", "slowkinggalarmega",
 	// Natdex second
 	"alakazammega", "annihilape", "arceus", "arceusfire", "arceuswater", "arceuselectric", "arceusgrass", "arceusice", "arceusfighting", "arceuspoison", 
 	"arceusground", "arceusflying", "arceuspsychic", "arceusbug", "arceusrock", "arceusghost", "arceusdragon", "arceusdark", "arceussteel", "arceusfairy",
