@@ -31,7 +31,6 @@ After that, find the right section within the formats list that describes your m
 
 // Imports
 import { Formats as Abilitypos                  } from '../data/mods/abilitypos/formats';
-import { Formats as AGoldenExperience           } from '../data/mods/agoldenexperience/formats';
 import { Formats as Alternatium                 } from '../data/mods/alternatium/formats';
 import { Formats as AlternatiumEX               } from '../data/mods/alternatiumex/formats';
 import { Formats as BackToSinnoh                } from '../data/mods/backtosinnoh/formats';
