@@ -434,11 +434,11 @@ export const Pokedex: {[speciesid: string]: ModdedSpeciesData} = {
 
 	golurk: {
 		inherit: true,
-		mega: "golurkmegay",
-		megaName: "Golurk-Mega-Y",
+		mega: "golurkmega",
+		megaName: "Golurk-Mega",
 		megaAbility: {0: "Vengeful"},
 		megaStats: {hp: 89, atk: 144, def: 120, spa: 55, spd: 110, spe: 65},
-		megaStone: "Golurkite-Y",
+		megaStone: "Golurkite",
 		megaCreator: "okispokis",
 	},
 
