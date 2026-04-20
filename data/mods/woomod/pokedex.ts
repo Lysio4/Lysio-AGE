@@ -387,5 +387,12 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 100, atk: 42, def: 80, spa: 80, spd: 94, spe: 160},
 		abilities: {0: "Dry Skin", H: "Seismic Sensor"},
 	},
-
+	piplup: {
+		inherit: true,
+		num: 100048,
+		name: "Piplup",
+		types: ["Water", "Steel"],
+		baseStats: {hp: 90, atk: 40, def: 80, spa: 150, spd: 80, spe: 40},
+		abilities: {0: "Mold Breaker"},
+	},
 };

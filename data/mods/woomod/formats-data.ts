@@ -115,13 +115,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "WM",
 		doublesTier: "dWM",
 	},
-		ditto: {
+	ditto: {
 		tier: "woober",
 		doublesTier: "dwoober",
 	},
 
 	// Slate 2
-		amauramega: {
+	amauramega: {
 		tier: "WM",
 		doublesTier: "dWM",
 	},
@@ -186,6 +186,10 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "dWM",
 	},
 	helioptile: {
+		tier: "WM",
+		doublesTier: "dWM",
+	},
+	piplup: {
 		tier: "WM",
 		doublesTier: "dWM",
 	},
