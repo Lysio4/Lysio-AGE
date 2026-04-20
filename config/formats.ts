@@ -361,7 +361,6 @@ export const Formats: FormatList = [
 		column: 2,
 	},
 	...gen533Valuemons,
-	...AGoldenExperience,
     //...gen3AdvPlus,
 	...gen3AdvDeluxe,
 	...gen3Tradebacks,
