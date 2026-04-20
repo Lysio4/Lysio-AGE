@@ -405,10 +405,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		gen: 9,
 		desc: "If held by a Galvantula, this item allows it to Mega Evolve in battle.",
 	},
-	golurkitey: {
-		name: "Golurkite-Y",
+	golurkite: {
+		name: "Golurkite",
 		spritenum: 578,
-		megaStone: "Golurk-Mega-Y",
+		megaStone: "Golurk-Mega",
 		megaEvolves: "Golurk",
 		itemUser: ["Golurk"],
 		onTakeItem(item, source) {
