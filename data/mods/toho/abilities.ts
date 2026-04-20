@@ -491,7 +491,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},
 	winterhearth: {
 		onBasePower(basePower, attacker, defender, move) {
-			if (['snowscape'].includes(pokemon.effectiveWeather())) {
+			if (this.field.isWeather(['hail', 'snow']) && move.type === 'Fire') {
 				return this.chainModify(2);
 			}
 		},
