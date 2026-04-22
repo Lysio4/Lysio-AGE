@@ -556,10 +556,13 @@ exports.chatlogreader = 'fs';
  
 exports.serverid = 'dragonheaven';
 exports.servertoken = 'qVkzIUlwEU2K';
+
+exports.usesqlite = true
+exports.usesqlitemodlog = true
  
 exports.grouplist = [
 	{
-		symbol: '&',
+		symbol: '~',
 		id: "admin",
 		name: "Administrator",
 		inherit: '@',
@@ -569,7 +572,7 @@ exports.grouplist = [
 		console: true,
 		bypassall: true,
 		lockdown: true,
-		promote: '&u',
+		promote: '~u',
 		roomowner: true,
 		roombot: true,
 		roommod: true,
@@ -667,13 +670,6 @@ exports.grouplist = [
 		tournaments: true,
 	},
 	{
-		symbol: '\u00a7',
-		id: "sectionleader",
-		name: "Section Leader",
-		inherit: '+',
-		jurisdiction: 'u',
-	},
-	{
 		// Bots are ranked below Driver/Mod so that Global Bots can be kept out
 		// of modjoin % rooms (namely, Staff).
 		// (They were previously above Driver/Mod so they can have game management
@@ -723,18 +719,19 @@ exports.grouplist = [
 		showmedia: true,
 		exportinputlog: true,
 		importinputlog: true,
+		// dh2 shit
 		tournaments: true,
 		minigame: true,
 		tournaments: true,
 		gamemoderation: true,
 	},
-	{
-		symbol: '^',
-		id: "prizewinner",
-		name: "Prize Winner",
-		roomonly: true,
-	},
-	{
+/*	{
+ *		symbol: '^',
+ *		id: "prizewinner",
+ *		name: "Prize Winner",
+ *		roomonly: true,
+ *	},
+ */	{
 		symbol: 'whitelist',
 		id: "whitelist",
 		name: "Whitelist",
