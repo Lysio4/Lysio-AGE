@@ -744,6 +744,7 @@ export const Learnsets: {[speciesid: string]: ModdedLearnsetData} = {
 			sunnyday: ["9L1"],
 			supersonic: ["9L1"],
 			swift: ["9L1"],
+			synchronoise: ["9L1"],
 			tackle: ["9L1"],
 			tailwind: ["9L1"],
 			takedown: ["9L1"],

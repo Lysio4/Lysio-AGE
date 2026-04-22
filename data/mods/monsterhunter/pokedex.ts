@@ -729,7 +729,7 @@ export const Pokedex: {[k: string]: ModdednameData} = {
 		num: 35,
 		name: "Kushala Daora",
 		types: ["Flying", "Steel"],
-		baseStats: {hp: 95, atk: 20, def: 93, spa: 114, spd: 110, spe: 88},
+		baseStats: {hp: 95, atk: 100, def: 93, spa: 114, spd: 110, spe: 88},
 		abilities: {0: "Bulletproof", H: "Magic Bounce"},
 		weightkg: 200.4,
 		tags: ["Elder Dragon"],

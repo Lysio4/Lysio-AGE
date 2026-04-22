@@ -462,7 +462,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
-			this.field.setWeather('sandstorm');
+			this.actions.useMove("Sandstorm", pokemon);
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "", target);
 		},
