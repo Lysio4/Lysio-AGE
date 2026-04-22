@@ -603,7 +603,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHRU",
 	},
 	ahtalneset: {
-		tier: "MHUU",
+		tier: "MHUUBL",
 	},
 	xuwu: {
 		tier: "MHOU",
@@ -693,7 +693,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MHUU",
 	},
 	daimyohermitaurstonefist: {
-		tier: "MHUU",
+		tier: "MHUUBL",
 	},
 	kirinemperor: {
 		tier: "MHOU",
