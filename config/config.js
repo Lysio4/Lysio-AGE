@@ -557,8 +557,8 @@ exports.chatlogreader = 'fs';
 exports.serverid = 'dragonheaven';
 exports.servertoken = 'qVkzIUlwEU2K';
 
-exports.usesqlite = true
-exports.usesqlitemodlog = true
+// exports.usesqlite = true
+// exports.usesqlitemodlog = true
  
 exports.grouplist = [
 	{
