@@ -79,5 +79,37 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MMM4",
 		doublesTier: "DOU",
 	},
+	exeggutor: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	revavroom: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	nidoqueen: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	milotic: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	sigilyph: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	ironboulder: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	volbeat: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	honchkrow: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
 
 };
