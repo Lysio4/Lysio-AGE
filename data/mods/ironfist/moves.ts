@@ -45,6 +45,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 
 	//slate 1
 	silcoonsexactmovepool: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -63,7 +64,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Bug",
 		desc: "Uses Tackle, String Shot, Poison Sting, Bug Bite, and Iron Defense.",
-		shortDesc: "Uses Tackle, String Shot, Poison Sting, Bug Bite, and Iron Defense.",
+		shortDesc: "Uses Silcoon's vanilla movepool.",
+		callsMove: true,
 	},
   	pog: {
 		accuracy: 100,
@@ -176,7 +178,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 		type: "Fairy",
 		desc: "Usually moves first. 10% chance to lower target's Speed by 1.",
-		shortDesc: "Usually moves first. 10% chance to lower target's Speed by 1.",
+		shortDesc: "Usually moves first. 10% target's Speed -1.",
 		contestType: "Cool",
 	},
   	fishingminigame: {
@@ -328,6 +330,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 	},
 	silcoonblast: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -352,6 +355,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Beautiful",
 	},
 	gofish: {
+		viable: false,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -1079,6 +1083,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
     },
 	cuddie: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "cuddIe",
@@ -1100,6 +1105,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Cute",
 	},
 	feebasproshops: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1301,7 +1307,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		category: "Status",
 		name: "Fish and Dip",
 		desc: "Sets 1 Fishing Token on the user's side. User switches out.",
-		shortDesc: "Sets 1 Fishing Token on the user's side. User switches out.",
+		shortDesc: "+1 Fishing Token. User switches out.",
 		pp: 10,
 		priority: 0,
 		flags: {metronome: 1, fishing: 1},
@@ -1348,6 +1354,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	frigidterrain: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -1504,6 +1511,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	supermushroom: {
+		viable: false,
 		name: "Super Mushroom",
 		type: "Grass",
 		category: "Status",
@@ -1552,6 +1560,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	fisheater: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "Fish Eater",
@@ -1585,6 +1594,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	fishingterrain: {
 		accuracy: true,
+		viable: false,
 		basePower: 0,
 		category: "Status",
 		name: "Fishing Terrain",
@@ -1753,6 +1763,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	genderaffirmingcare: {
 		name: "Gender Affirming Care",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,
@@ -1784,6 +1795,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	liondeluge: {
 		name: "Lion Deluge",
+		viable: false,
 		type: "Electric",
 		category: "Status",
 		basePower: 0,
@@ -1921,6 +1933,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	blindingsquirter: {
 		name: "Blinding Squirter",
+		viable: false,
 		type: "Lemon",
 		category: "Status",
 		basePower: 0,
@@ -1955,7 +1968,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: true,
 		pp: 10,
 		desc: "User switches out. Incoming Diamond Hand: 30% heal.",
-		shortDesc: "User switches out. Incoming Diamond Hand: 30% heal.",
+		shortDesc: "User switches. Incoming Diamond Hand: 30% heal.",
 		priority: -2,
 		flags: {metronome: 1},
 		onTry(source) {
@@ -2046,7 +2059,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: 100,
 		pp: 10,
 		desc: "50% chance to lower target's Def by 1 stage, 100% if target healed.​",
-		shortDesc: "50% chance to lower target's Def by 1 stage, 100% if target healed.​",
+		shortDesc: "50% chance for -1 Def, 100% if target healed.​​",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
@@ -2068,6 +2081,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	corrosivegus: {
 		name: "Corrosive Gus",
+		viable: false,
 		type: "Normal",
 		category: "Status",
 		basePower: 0,
@@ -2173,10 +2187,10 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 0,
 		accuracy: true,
 		pp: 5,
-		desc: "Raises Attack, Sp. Attack, Speed, accuracy by 1. User loses 1/8 HP.",
-		shortDesc: "Raises Attack, Sp. Attack, Speed, accuracy by 1. User loses 1/8 HP.",
+		desc: "Raises Atk/SpA/Spe/acc by 1. User loses 1/8 HP.",
+		shortDesc: "Raises the user's Attack, Sp. Attack, Speed, accuracy by 1, but user takes 1/8 HP in damage.",
 		priority: 0,
-		flags: {snatch: 1, metronome: 1, contact: 1},
+		flags: {snatch: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Bulk Up", target);
@@ -2576,6 +2590,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "normal",
 	},
 	fertilesoil: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -2608,6 +2623,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	epicbeam: {
 		name: "Epic Beam",
+		viable: false,
 		type: "Ice",
 		category: "Status",
 		basePower: 0,
@@ -2667,6 +2683,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	chaospotion: {
 		name: "Chaos Potion",
+		viable: false,
 		type: "Psychic",
 		category: "Status",
 		basePower: 0,
@@ -2717,6 +2734,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	graveyard: {
 		name: "Graveyard",
+		viable: false,
 		type: "Ghost",
 		category: "Status",
 		basePower: 0,
@@ -2766,6 +2784,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		},
 	},
 	citrusbomb: {
+		viable: false,
 		accuracy: 85,
 		basePower: 60,
 		category: "Special",
@@ -3120,6 +3139,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	energytank: {
 		name: "Energy Tank",
+		viable: false,
 		type: "Steel",
 		category: "Status",
 		basePower: 0,
@@ -3419,7 +3439,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		accuracy: 100,
 		pp: 5,
 		desc: "Hits all adjacent Pokemon. User faints and gains 3 Fishing Tokens.",
-		shortDesc: "Hits all adjacent Pokemon. User faints and gains 3 Fishing Tokens.",
+		shortDesc: "User faints and gains 3 Fishing Tokens.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		selfdestruct: "always",
@@ -3774,8 +3794,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		target: "self",
 		type: "Water",
 	},
-	floatsamhook: {
-		name: "Floatsam Hook",
+	flotsamhook: {
+		name: "Flotsam Hook",
 		type: "Water",
 		category: "Physical",
 		basePower: 85,
@@ -3837,6 +3857,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	catchysong: {
 		name: "Catchy Song",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,
@@ -3882,8 +3903,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 0,
 		category: "Status",
 		name: "Bloom Desire",
-		desc: "2 turns: 2/3 of user's max HP is restored, cure status.",
-		shortDesc: "2 turns: 2/3 of user's max HP is restored, cure status.",
+		desc: "2 turns: 2/3 user's max HP is restored, cure status.",
+		shortDesc: "2 turns: 2/3 user's max HP is restored, cure status.",
 		pp: 5,
 		priority: 0,
 		flags: { snatch: 1, heal: 1, metronome: 1 },
@@ -3920,6 +3941,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	acidrain: {
 		name: "Acid Rain",
+		viable: false,
 		type: "Lemon",
 		category: "Status",
 		basePower: 0,
@@ -4005,7 +4027,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		shortDesc: "Hits two turns after being used.",
 		pp: 10,
 		priority: 0,
-		flags: { allyanim: 1, metronome: 1, futuremove: 1 },
+		flags: { allyanim: 1, metronome: 1, futuremove: 1, fishing: 1},
 		ignoreImmunity: true,
 		onTry(source, target) {
 			if (!target.side.addSlotCondition(target, 'futuremove')) return false;
@@ -4019,7 +4041,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 					basePower: 120,
 					category: "Special",
 					priority: 0,
-					flags: { allyanim: 1, metronome: 1, futuremove: 1 },
+					flags: { allyanim: 1, metronome: 1, futuremove: 1, fishing: 1},
 					ignoreImmunity: false,
 					effectType: 'Move',
 					type: 'Water',
@@ -4034,6 +4056,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		contestType: "Clever",
 	},
 	stealthanvils: {
+		viable: false,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -4095,8 +4118,8 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		basePower: 95,
 		accuracy: true,
 		pp: 10,
-		desc: "1.2x power in weather or terrain. Physical if Atk > SpA.",
-		shortDesc: "1.2x power in weather or terrain. Physical if Atk > SpA.",
+		desc: "1.2x power in weather/terrain. Physical if Atk > SpA.",
+		shortDesc: "1.2x power in weather/terrain. Physical if Atk > SpA.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
@@ -4153,7 +4176,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		pp: 69,
 		noPPBoosts: true,
 		desc: "Changes the targets's primary type to Flying and adds the Bird volatile.",
-		shortDesc: "Changes the targets's primary type to Flying and adds Bird.",
+		shortDesc: "Targets's primary type = Flying, adds Bird.",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1, contact: 1, disaster: 1, wind: 1},
 		onPrepareHit(target, pokemon, move) {
@@ -4175,6 +4198,7 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 	},
 	greatestachievement: {
 		name: "Greatest Achievement",
+		viable: false,
 		type: "Silly",
 		category: "Status",
 		basePower: 0,

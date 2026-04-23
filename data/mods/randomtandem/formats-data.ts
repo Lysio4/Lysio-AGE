@@ -71,4 +71,14 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	tinglu: {
 		tier: "Random",
 	},
+	dondozo: {
+		tier: "Random",
+	},
+	hoopaunbound: {
+		tier: "Random",
+	},
+	kingambit: {
+		tier: "Random",
+	},
+
 };

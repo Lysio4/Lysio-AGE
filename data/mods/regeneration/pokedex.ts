@@ -161,6 +161,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	// Minor Changes (mostly to prevent unevolved Pokemons in gen 1 to hold Eviolite)
 	golbat: {
 		inherit: true,
+		baseStats: {hp: 80, atk: 90, def: 70, spa: 55, spd: 70, spe: 115},
+		abilities: {0: "Blood Bank", H: "Infiltrator"},
 		evos: [],
 	},
 	magneton: {
@@ -169,6 +171,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	lickitung: {
 		inherit: true,
+		baseStats: {hp: 110, atk: 90, def: 75, spa: 80, spd: 75, spe: 55},
+		abilities: {0: "Analytic", 1: "Oblivious", H: "Immunity"},
 		evos: [],
 	},
 	rhydon: {
@@ -181,6 +185,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 	},
 	tangela: {
 		inherit: true,
+		types: ["Grass", "Ground"],
+		baseStats: {hp: 75, atk: 55, def: 115, spa: 90, spd: 100, spe: 45},
+		abilities: {0: "Vine Yard", H: "Tangling Hair"},
 		evos: [],
 	},
 	electabuzz: {
@@ -192,6 +199,10 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		evos: [],
 	},
 	porygon: {
+		inherit: true,
+		evos: [],
+	},
+	primeape: {
 		inherit: true,
 		evos: [],
 	},

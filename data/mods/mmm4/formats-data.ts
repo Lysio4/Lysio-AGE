@@ -71,5 +71,13 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "MMM4",
 		doublesTier: "DOU",
 	},
+	kecleon: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
+	wigglytuff: {
+		tier: "MMM4",
+		doublesTier: "DOU",
+	},
 
 };

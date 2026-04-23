@@ -1077,4 +1077,127 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 			],
 		],
 	},
+	dondozo: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'blissey',
+					item: 'heavydutyboots',
+					ability: 'naturalcure',
+					teraType: ['dark', 'water'],
+				},
+				['calmmind', 'softboiled'], ['seismictoss', 'shadowball', 'toxic']
+			],
+			[
+				{
+					species: 'clodsire',
+					item: ['heavydutyboots', 'leftovers'],
+					ability: ['unaware', 'waterabsorb'],
+					teraType: 'dark',
+				},
+				['recover', 'mortalspin'], ['earthquake', 'poisonjab', 'spikes', 'amnesia']
+			],
+			[
+				{
+					species: 'gliscor',
+					item: 'toxicorb',
+					ability: 'poisonheal',
+					teraType: ['normal', 'water'],
+				},
+				['protect', 'knockoff'], ['earthquake', 'swordsdance', 'facade']
+			],
+			[
+				{
+					species: 'Weezing-Galar',
+					item: 'heavydutyboots',
+					ability: 'Neutralizing Gas',
+					teraType: ['ghost', 'grass'],
+				},
+				['defog', 'shoreup'], ['strangesteam', 'willowisp', 'sludgebomb', 'toxic', 'corrosivegas']
+			],
+		],
+	},
+	hoopaunbound: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'conkeldurr',
+					item: 'flameorb',
+					ability: 'guts',
+					teraType: 'normal',
+				},
+				['closecombat', 'knockoff', 'facade', 'extremespeed']
+			],
+			[
+				{
+					species: 'porygon2',
+					item: 'eviolite',
+					ability: 'regenerator',
+					teraType: ['flying', 'ghost'],
+				},
+				['terablast', 'icebeam', 'recover', 'trickroom']
+			],
+			[
+				{
+					species: 'magearna',
+					item: 'ejectpack',
+					ability: 'magicbounce',
+					teraType: 'water',
+				},
+				['fleurcannon', 'mistyexplosion', 'spikes', 'trickroom']
+			],
+			[
+				{
+					species: 'torkoal',
+					item: 'choicespecs',
+					ability: 'drought',
+					teraType: 'grass',
+				},
+				['eruption', 'weatherball', 'hydrosteam', 'solarbeam']
+			],
+		],
+	},
+	kingambit: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'talonflame',
+					item: 'heavydutyboots',
+					ability: 'illusion',
+					teraType: 'flying',
+				},
+				['swordsdance', 'bravebird'], ['flareblitz', 'roost', 'willowisp', 'taunt']
+			],
+			[
+				{
+					species: 'zoroarkhisui',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: 'ghost',
+				},
+				['nastyplot', 'astralbarrage', 'focusblast', 'willowisp']
+			],
+			[
+				{
+					species: 'ironmoth',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: ['grass', 'ground', 'fire'],
+				},
+				['fierydance', 'sludgewave'], ['energyball', 'overheat', 'substitute', 'uturn', 'toxicspikes']
+			],
+			[
+				{
+					species: 'primarina',
+					item: 'choicespecs',
+					ability: 'illusion',
+					teraType: ['water', 'fairy', 'psychic'],
+				},
+				['hydropump', 'moonblast', 'icebeam', 'psychic']
+			],
+		],
+	},
 };

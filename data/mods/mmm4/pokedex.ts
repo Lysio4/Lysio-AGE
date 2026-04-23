@@ -102,7 +102,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		num: 6712,
 		name: "Luxray",
 		types: ["Electric", "Dark"],
-		baseStats: {hp: 80, atk: 100, def: 79, spa: 95, spd: 79, spe: 85},
+		baseStats: {hp: 80, atk: 90, def: 79, spa: 95, spd: 79, spe: 85},
 		abilities: {0: "Rivalry", 1: "Static", H: "Sheer Force"},
 		prevo: null,
 	},
@@ -145,6 +145,22 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 65, atk: 105, def: 65, spa: 45, spd: 110, spe: 120},
 		abilities: {0: "Refrigerate", 1: "Tough Claws", H: "Sand Stream"},
 		evos: null,
+	},
+	kecleon: {
+		inherit: true,
+		num: 6700,
+		name: "Kecleon",
+		types: ["Normal", "Poison"],
+		baseStats: {hp: 60, atk: 100, def: 60, spa: 95, spd: 175, spe: 70},
+		abilities: {0: "Poison Touch", H: "Protean"},
+	},
+	wigglytuff: {
+		inherit: true,
+		num: 6701,
+		name: "Wigglytuff",
+		types: ["Normal", "Fairy"],
+		baseStats: {hp: 150, atk: 75, def: 94, spa: 90, spd: 22, spe: 45},
+		abilities: {0: "Cute Charm", 1: "Cotton Down", H: "Competitive"},
 	},
 
 };

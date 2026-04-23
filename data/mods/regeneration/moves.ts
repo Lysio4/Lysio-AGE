@@ -430,6 +430,61 @@ export const Moves: {[k: string]: ModdedMoveData} = {
 		type: "Normal",
 		contestType: "Clever",
 	},
+	tastetest: {
+		accuracy: 100,
+		basePower: 75,
+		category: "Physical",
+		name: "Taste Test",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		shortDesc: "Boosts damage user does to target; lowers target's Speed.",
+		secondary: {
+			chance: 100,
+			boosts: {
+				spe: -1,
+			},
+		},
+		onAfterHit(target, source) {
+			if (source.hp && target.hp) {
+				if (!source.m.tasteTested) source.m.tasteTested = [];
+				if (!source.m.tasteTested.includes(target)) {
+					source.m.tasteTested.push(target);
+					this.add('-message', `${source.illusion ? source.illusion.name : source.name} licked ${target.illusion ? target.illusion.name : target.name} and learned its flavor and texture!`);
+					this.hint(`For the rest of the battle, all of ${source.illusion ? source.illusion.name : source.name}'s moves will do 1.5x the damage to ${target.illusion ? target.illusion.name : target.name}.`);
+				}
+			}
+		},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Lick", target);
+		},
+		target: "normal",
+		type: "Normal",
+		contestType: "Clever",
+	},
+	toxicbite: {
+		num: 305,
+		accuracy: 100,
+		basePower: 65,
+		category: "Physical",
+		shortDesc: "Poisons the target.",
+		name: "Toxic Bite",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, bite: 1},
+		onPrepareHit(target, source, move) {
+			this.attrLastMove('[still]');
+			this.add('-anim', source, "Poison Fang", target);
+		},
+		secondary: {
+			chance: 100,
+			status: 'psn',
+		},
+		target: "normal",
+		type: "Poison",
+		contestType: "Clever",
+	},
 	stealthrock: {
 		inherit: true,
 		condition: {

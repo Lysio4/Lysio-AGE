@@ -414,22 +414,18 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	// Unfinished / idk how to
 
 	hoothootability: {
-		// Is supposed to force Normal type on opponents + be Normalize.
-		onModifyTypePriority: 1,
-		onModifyType(move, pokemon) {
-			if (pokemon === this.effectState.target && move.type !== '???') {
-				const noModifyType = [
-					'hiddenpower', 'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'struggle', 'technoblast', 'terrainpulse', 'weatherball',
-				];
-				if (!(move.isZ && move.category !== 'Status') && !noModifyType.includes(move.id) && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
-					move.type = 'Normal';
-					move.typeChangerBoosted = this.effect;
-				}
+		onStart(pokemon) {
+			pokemon.addVolatile('ability:normalize');
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasType('Normal') || !pokemon.addType('Normal')) continue;
+				this.add('-start', pokemon, 'typeadd', 'Normal', '[from] ability: Hoothoot Ability');
 			}
 		},
-		onBasePowerPriority: 23,
-		onBasePower(basePower, pokemon, target, move) {
-			if (pokemon === this.effectState.target && move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		onUpdate(pokemon) {
+			for (const pokemon of this.getAllActive()) {
+				if (pokemon.hasType('Normal') || !pokemon.addType('Normal')) continue;
+				this.add('-start', pokemon, 'typeadd', 'Normal', '[from] ability: Hoothoot Ability');
+			}
 		},
 		flags: {},
 		name: "Hoothoot Ability",
@@ -438,12 +434,20 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	mitosis: {
 		onDamagingHit(damage, target, source, move) {
 			if (!move || move.effectType !== 'Move' || source === target) return;
-			const stats: BoostID[] = ['atk', 'def', 'spa', 'spd', 'spe'];
-			const availableStats = stats.filter(stat => target.boosts[stat] < 6);
-			if (!availableStats.length) return;
-			const randomStat = this.sample(availableStats);
-			this.boost({[randomStat]: 1}, target, target);
-			this.add('-activate', target, 'ability: Mitosis');
+			const stats: BoostID[] = [];
+			let stat: BoostID;
+			//console.log(target);
+			for (stat in target.boosts) {
+				if (target.boosts[stat] < 6) {
+					stats.push(stat);
+				}
+			}
+			if (stats.length) {
+				const randomStat = this.sample(stats);
+				const boost: SparseBoostsTable = {};
+				boost[randomStat] = 1;
+				this.boost(boost);
+			}
 		},
 		flags: {},
 		name: "Mitosis",

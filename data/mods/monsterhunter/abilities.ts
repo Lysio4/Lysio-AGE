@@ -199,6 +199,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Scorching",
 		shortDesc: "In sun, this Pokémon's non-Fire moves have 1.3x power.",
 	},
+	magnetic: {
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Steel') {
+				if (!this.boost({atk: 1})) {
+					this.add('-immune', target, '[from] ability: Magnetic');
+				}
+				return null;
+			}
+		},
+		onAnyRedirectTarget(target, source, source2, move) {
+			if (move.type !== 'Steel' || ['firepledge', 'grasspledge', 'waterpledge'].includes(move.id)) return;
+			const redirectTarget = ['randomNormal', 'adjacentFoe'].includes(move.target) ? 'normal' : move.target;
+			if (this.validTarget(this.effectState.target, source, redirectTarget)) {
+				if (move.smartTarget) move.smartTarget = false;
+				return this.effectState.target;
+			}
+		},
+		flags: {breakable: 1},
+		name: "Magnetic",
+		shortDesc: "This Pokemon draws Steel moves to itself to raise it's Atk by 1; Steel Immunity.",
+	},
 	flicker: {
 		onStart(pokemon) {
 			if (pokemon.outFlickered) return;
@@ -1695,13 +1716,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		onSourceDamagingHit(damage, target, source, move) {
 			if (target.hasAbility('shielddust') || target.hasItem('covertcloak')) return;
 			if (this.checkMoveMakesContact(move, source, target)) {
-				if (this.randomChance(5, 10)) {
+				{
 					target.addVolatile('bleeding', source);
 				}
 			}
 		},
 		flags: {},
-		shortDesc: "Contact moves have a 50% chance to inflict bleed on the target.",
+		shortDesc: "Contact moves inflict bleed on the target.",
 		name: "Razor Edge",
 	},
 	reactivecore: {

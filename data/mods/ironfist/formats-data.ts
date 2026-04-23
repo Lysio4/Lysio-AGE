@@ -8,7 +8,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	toxapex: {
-		tier: "Viable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	silcoon: {
@@ -68,7 +68,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	bigcrammer: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	archeops: {
@@ -88,7 +88,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	wyrdeer: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	goomba: {
@@ -258,7 +258,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	swampert: {
-		tier: "Viable",
+		tier: "Unviable",
 		doublesTier: "DIF",
 	},
 	swooliobat: {
@@ -303,11 +303,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	shinxfishing: {
-		tier: "Viable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	conquescape: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	daiyakuza: {
@@ -608,7 +608,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	skibidragon: {
-		tier: "Viable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	hitmontopmega: {
@@ -632,11 +632,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	fudgesaur: {
-		tier: "Viable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	fudgesaurmega: {
-		tier: "Viable",
+		tier: "Untested",
 		doublesTier: "DIF",
 	},
 	darkpoison: {
@@ -755,11 +755,11 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	victreebelmega: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	lucariocalmmega: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	awesomepossum: {
@@ -783,7 +783,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	kyogreoriginal: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	lawset: {
@@ -807,7 +807,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	zapmolcuno: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 	nosepass: {
@@ -819,7 +819,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		doublesTier: "DIF",
 	},
 	girafarigmega: {
-		tier: "Untested",
+		tier: "Viable",
 		doublesTier: "DIF",
 	},
 };

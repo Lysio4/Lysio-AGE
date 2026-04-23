@@ -1746,7 +1746,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	flyingpress: {
 		num: 560,
 		accuracy: 100,
-		basePower: 85,
+		basePower: 75,
 		category: "Physical",
 	   shortDesc: "(Mostly functional) Either Fighting or Flying-type, whichever is more effective.",
 		name: "Flying Press",
@@ -2048,16 +2048,26 @@ export const Moves: {[moveid: string]: MoveData} = {
 		inherit: true,
 		desc: "30% chance to inflict bleed.",
 		shortDesc: "30% chance to inflict bleed.",
+		flags: {slicing: 1, contact: 1, protect: 1, mirror: 1, metronome: 1},
 		secondary: {
 			chance: 30,
 			volatileStatus: 'bleeding',
 		},
+	},
+	growth: {
+		inherit: true,
+		type: "Grass",
+	},
+	snaptrap: {
+		inherit: true,
+		type: "Steel",
 	},
 	metalclaw: {
 		inherit: true,
 		basePower: 80,
 		accuracy: 100,
 		pp: 15,
+		flags: {slicing: 1, contact: 1, protect: 1, mirror: 1, metronome: 1},
 		desc: "30% chance to inflict bleed.",
 		shortDesc: "30% chance to inflict bleed.",
 		secondary: {
@@ -2090,6 +2100,55 @@ export const Moves: {[moveid: string]: MoveData} = {
 		viable: true,
 		basePower: 90,
 	},
+	appleacid: {
+		inherit: true,
+		basePower: 90,
+	},
+	beakblast: {
+		inherit: true,
+		basePower: 120,
+	},
+	psyshieldbash: {
+		inherit: true,
+		basePower: 90,
+	},
+	infernalparade: {
+		inherit: true,
+		basePower: 65,
+	},
+	toxicthread: {
+		inherit: true,
+		boosts: {
+			spe: -2,
+		},
+		desc: "Lowers the target's Speed by 2 stage and poisons it.",
+		shortDesc: "Lowers the target's Speed by 2 and poisons it.",
+	},
+	crabhammer: {
+		inherit: true,
+		accuracy: 95,
+	},
+	moonblast: {
+		inherit: true,
+		basePower: 90,
+		secondary: {
+			chance: 10,
+			boosts: {
+				spa: -1,
+			},
+		},
+		desc: "Has a 10% chance to lower the target's Special Attack by 1 stage.",
+		shortDesc: "10% chance to lower the target's Sp. Atk by 1.",
+	},
+	ironhead: {
+		inherit: true,
+		secondary: {
+			chance: 20,
+			volatileStatus: 'flinch',
+		},
+		desc: "Has a 20% chance to make the target flinch.",
+		shortDesc: "20% chance to make the target flinch.",
+	},
 	spectralthief: {
 		inherit: true,
 		viable: true,
@@ -2115,6 +2174,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	shadowclaw: {
 		inherit: true,
 		viable: true,
+		flags: {slicing: 1, contact: 1, protect: 1, mirror: 1, metronome: 1},
 		basePower: 85,
 	},
 	tailslap: {
@@ -2124,6 +2184,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 	crushclaw: {
 		inherit: true,
 		viable: true,
+		flags: {slicing: 1, contact: 1, protect: 1, mirror: 1, metronome: 1},
 		accuracy: 100,
 		basePower: 85,
 	},
@@ -2193,6 +2254,10 @@ export const Moves: {[moveid: string]: MoveData} = {
 		accuracy: 100,
 		basePower: 100,
 	},
+	gigatonhammer: {
+		inherit: true,
+		basePower: 150,
+	},
 	paraboliccharge: {
 		inherit: true,
 		viable: true,
@@ -2201,10 +2266,6 @@ export const Moves: {[moveid: string]: MoveData} = {
 	seedbomb: {
 		inherit: true,
 		basePower: 85,
-	},
-	moonblast: {
-		inherit: true,
-		basePower: 90,
 	},
 	tropkick: {
 		inherit: true,
@@ -2780,14 +2841,18 @@ export const Moves: {[moveid: string]: MoveData} = {
 	},
 	bittermalice: {
 		inherit: true,
-		basePower: 60,
+		basePowerCallback(pokemon, target, move) {
+			if (target.status || target.hasAbility('comatose')) return move.basePower * 2;
+			return move.basePower;
+		},
+		basePower: 65,
 		pp: 15,
 		secondary: {
 			chance: 30,
 			status: 'frz',
 		},
 		desc: "30% chance to frostbite the target.",
-		shortDesc: "30% chance to frostbite the target.",
+		shortDesc: "30% frostbite. 2x power if target is already statused.",
 	},
 	bleakwindstorm: {
 		inherit: true,
