@@ -35,7 +35,7 @@ export const Conditions: { [k: string]: ConditionData; } = {
 			}
 		},
 		onSourceModifyDamage(damage, source, target, move) {
-			return this.chainModify(1.2);
+			return this.chainModify(0x1333);
 		},
 		onModifyMove(move, pokemon) {
 			if (move.multihit) delete move.multihit;

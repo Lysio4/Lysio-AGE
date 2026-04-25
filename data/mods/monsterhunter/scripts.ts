@@ -5,6 +5,37 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 		customTiers: ['MHAG', 'MHOU', 'MHUUBL', 'MHUU', 'MHRUBL', 'MHRU', 'MHNUBL', 'MHNU'],
 		customDoublesTiers: ['MHAG', 'MHOU', 'MHUUBL', 'MHUU', 'MHRUBL', 'MHRU', 'MHNUBL', 'MHNU'],
 	},
+		/** Unlike clearStatus, gives cure message */
+	cureStatus(silent = false) {
+		if (!this.hp || !this.status) return false;
+		this.battle.add('-curestatus', this, this.status, silent ? '[silent]' : '[msg]');
+
+		if (this.status === 'slp' && this.removeVolatile('nightmare')) {
+			this.battle.add('-end', this, 'Nightmare', '[silent]');
+		}
+
+		if (this.status === 'dragonblight') {
+			this.battle.add('-end', this, 'dragonblight', '[silent]');
+		}
+
+		this.setStatus('');
+		return true;
+	},
+
+	clearStatus() {
+		if (!this.hp || !this.status) return false;
+
+		if (this.status === 'slp' && this.removeVolatile('nightmare')) {
+			this.battle.add('-end', this, 'Nightmare', '[silent]');
+		}
+
+		if (this.status === 'dragonblight') {
+			this.battle.add('-end', this, 'dragonblight', '[silent]');
+		}
+
+		this.setStatus('');
+		return true;
+	},
 	pokemon: {
 		ignoringItem() {
 		return !!(
