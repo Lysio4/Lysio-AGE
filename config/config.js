@@ -556,9 +556,6 @@ exports.chatlogreader = 'fs';
  
 exports.serverid = 'dragonheaven';
 exports.servertoken = 'qVkzIUlwEU2K';
-
-// exports.usesqlite = true
-// exports.usesqlitemodlog = true
  
 exports.grouplist = [
 	{
@@ -634,6 +631,7 @@ exports.grouplist = [
 		globalban: true,
 		ban: true,
 		modchat: 'a',
+		promote: "+u",
 		roomvoice: true,
 		roomwhitelist: true,
 		forcerename: true,
@@ -641,6 +639,7 @@ exports.grouplist = [
 		alts: '@u',
 		game: true,
 		tournaments: true,
+		declare: true,
 	},
 	{
 		symbol: '%',
