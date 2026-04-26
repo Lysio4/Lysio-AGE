@@ -162,12 +162,14 @@ import { Formats as Maadowr                     } from '../data/mods/maadowr/for
 import { Formats as MaadowrLostZone             } from '../data/mods/maadowrlostzone/formats';
 import { Formats as Masquerade                  } from '../data/mods/masquerade/formats';
 import { Formats as MegaMania                   } from '../data/mods/megamania/formats';
+import { Formats as MegaRevolution              } from '../data/mods/megarevolution/formats';
 import { Formats as MetaMons                    } from '../data/mods/metamons/formats';
 import { Formats as MixAndMega                  } from '../data/mods/mixandmega/formats';
 import { Formats as MixAndMegaBalls             } from '../data/mods/mixandmegaballs/formats';
 import { Formats as MixAndMegasForAll           } from '../data/mods/mixandmegasforall/formats';
 import { Formats as MicrometaMafia2             } from '../data/mods/mmm2/formats';
 import { Formats as MicrometaMafia3             } from '../data/mods/mmm3/formats';
+import { Formats as MicrometaMafia4             } from '../data/mods/mmm4/formats';
 import { Formats as ModernGen1                  } from '../data/mods/moderngen1/formats';
 import { Formats as ModernGen2                  } from '../data/mods/moderngen2/formats';
 import { Formats as ModernGen2Birds             } from '../data/mods/moderngen2birds/formats';
@@ -178,7 +180,6 @@ import { Formats as PokemonThrone               } from '../data/mods/pokemonthro
 import { Formats as MoreBalancedHackmons        } from '../data/mods/morebalancedhackmons/formats';
 import { Formats as NaturalSelection            } from '../data/mods/naturalselection/formats';
 import { Formats as NotMyType                   } from '../data/mods/notmytype/formats';
-import { Formats as NukeButtons                 } from '../data/mods/nukebuttons/formats';
 import { Formats as OUTheorymons                } from '../data/mods/outheorymons/formats';
 import { Formats as Paleomons                   } from '../data/mods/paleomons/formats';
 import { Formats as Patratdex                   } from '../data/mods/patratdex/formats';
@@ -192,6 +193,7 @@ import { Formats as PonymonShowdown             } from '../data/mods/ponymonshow
 import { Formats as PublicDomain                } from '../data/mods/publicdomain/formats';
 import { Formats as RandomTandem                } from '../data/mods/randomtandem/formats';
 import { Formats as ReGeneration                } from '../data/mods/regeneration/formats';
+import { Formats as ResetMons                   } from '../data/mods/resetmons/formats';
 import { Formats as RegionalEvolutions          } from '../data/mods/regionalevolutions/formats';
 import { Formats as Restrictions                } from '../data/mods/restrictions/formats';
 import { Formats as ReturnToOrreTercera         } from '../data/mods/returntoorretercera/formats';
@@ -241,7 +243,7 @@ import { Formats as Woomod                      } from '../data/mods/woomod/form
 import { Formats as Worldbuilding               } from '../data/mods/worldbuilding/formats';
 //import { Formats as YayaMons                    } from '../data/mods/yayamons/formats';
 
-export const Formats: FormatList = [
+export const Formats: import('../sim/dex-formats').FormatList = [
 	///////////////////////////////////////////////////////////////
 	///////////////////// Gen 9 Pet Mods //////////////////////////
 	///////////////////////////////////////////////////////////////
@@ -285,6 +287,7 @@ export const Formats: FormatList = [
 	...Ironmons,
 	...LittleColosseum,
 	...Masquerade,
+	...MegaRevolution,
 	...MegasForAllPaldea,
 	...gen9MegasForAll,
 	...gen8MegasForAllv6,
@@ -292,6 +295,7 @@ export const Formats: FormatList = [
 	...MetaMons,
 	...MicrometaMafia2,
 	...MicrometaMafia3,
+	...MicrometaMafia4,
 	...MoreBalancedHackmons,
 	...gen9Multiverse,
 	...NaturalSelection,
@@ -305,6 +309,7 @@ export const Formats: FormatList = [
 	...gen1RBYCAP,
 	...ReGeneration,
 	...RegionalEvolutions,
+	...ResetMons,
 	...ReturnToOrreTercera,
 	...Roulettemons2,
 	...SecretSanta,
@@ -363,7 +368,7 @@ export const Formats: FormatList = [
 	...gen3AdvToThePast,
 	...Balls,
 	//...BareBones
-    ...Beaftopia,
+  ...Beaftopia,
 	...gen5BestWishesYoshiblaze,
 	...ChatBats,
 	...ClubmonsRequiem,
@@ -399,7 +404,6 @@ export const Formats: FormatList = [
 	...MaadowrLostZone,
 	...MegaMania,
 	...gen1Metronome,
-	...NukeButtons,
 	...Solopet,
 	...gen1Moonside,
 	...TheBore,

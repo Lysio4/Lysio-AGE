@@ -140,8 +140,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
         onResidualSubOrder: 2,
         onResidual(pokemon) {
             if (!pokemon.hp) return;
-            const names = ['anaconja', 'earl', 'Orangesodapop', 'Jumpheart', 'zxgzxg', 'TTTech_', 'gekokeso', 'MemesBita', 'regiboat', 'Tanny89k', 'Fragmented', 'Gaboswampert', 'DenebStargazer', 'Beebos', 'PalpitoadChamp', 'Soul Dew Latias', 'woo', 'AquaticPanic', 'Yoshiblaze'];
-            const avatars = ['shelly', 'janitor', 'crasherwake', 'bianca', 'miku-water', 'burglar', 'swimmer-gen4dp', 'wattson', 'blue-gen1', 'anabel', 'klara', 'psychic-lgpe', 'maid', 'pokemonbreederf', 'brycenman', 'lyra', 'lana-masters', 'hilda', 'schoolkid-gen4'];
+            const names = ['anaconja', 'earl', 'Orangesodapop', 'Jumpheart', 'zxgzxg', 'TTTech_', 'gekokeso', 'MemesBita', 'regiboat', 'Tanny89k', 'Fragmented', 'Gaboswampert', 'DenebStargazer', 'Beebos', 'PalpitoadChamp', 'Soul Dew Latias', 'woo', 'AquaticPanic', 'Yoshiblaze', 'Seito Chinchou', 'Rasdanation', 'JoltSmash', 'BIG ASHLEY', 'Gaboswampert'];
+            const avatars = ['shelly', 'janitor', 'crasherwake', 'bianca', 'miku-water', 'burglar', 'swimmer-gen4dp', 'wattson', 'blue-gen1', 'anabel', 'klara', 'psychic-lgpe', 'maid', 'pokemonbreederf', 'brycenman', 'lyra', 'lana-masters', 'hilda', 'schoolkid-gen4', 'furisodegirl-black', 'morty-masters2', 'zinzolin', 'fisher-gen8', 'wulfric'];
             const pokemons = this.dex.species.all();
             pokemon.formeChange(this.sample(pokemons));
             const randomNumber = this.random(names.length);
@@ -1272,7 +1272,9 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		onResidualSubOrder: 2,
 		onResidual(pokemon) {
 			this.boost({spe: -1});
-			if(pokemon.boosts['spe'] === -6 && pokemon.status !== 'frz') {
+		},
+		onUpdate(pokemon) {
+			if (pokemon.boosts['spe'] === -6 && pokemon.status !== 'frz') {
 				pokemon.cureStatus();
 				pokemon.setStatus('frz');
 			}

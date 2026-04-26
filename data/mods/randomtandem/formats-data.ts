@@ -44,4 +44,41 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	weavile: {
 		tier: "Random",
 	},
+	fezandipiti: {
+		tier: "Random",
+	},
+	skarmory: {
+		tier: "Random",
+	},
+	clefable: {
+		tier: "Random",
+	},
+	ogerpon: {
+		tier: "Random",
+	},
+	pecharunt: {
+		tier: "Random",
+	},
+	moltres: {
+		tier: "Random",
+	},
+	arcaninehisui: {
+		tier: "Random",
+	},
+	ironboulder: {
+		tier: "Random",
+	},
+	tinglu: {
+		tier: "Random",
+	},
+	dondozo: {
+		tier: "Random",
+	},
+	hoopaunbound: {
+		tier: "Random",
+	},
+	kingambit: {
+		tier: "Random",
+	},
+
 };

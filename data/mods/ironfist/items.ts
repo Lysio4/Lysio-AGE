@@ -103,8 +103,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			for (const side of this.sides) {
 				if (side.hasAlly(pokemon)) continue;
 				for (const target of side.active) {
-					console.log("target: " + target.name + "\nfishing terrain: " + (this.field.isTerrain('fishingterrain') && pokemon.isGrounded()) + "\nwater: " + target.hasType('Water') + "\nfish: " + target.baseSpecies.fish);
-					if ((this.field.isTerrain('fishingterrain') && pokemon.isGrounded()) ||
+					if ((this.field.isTerrain('fishingterrain')) ||
 					target.hasType('Water') || target.baseSpecies.fish) {
 						side.addSideCondition('fishhook', pokemon);
 						const data = side.getSideConditionData('fishhook');
@@ -118,12 +117,12 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			}
 		},
 		onModifyMove(move, source, target) {
-			if (((this.field.isTerrain('fishingterrain') && source.isGrounded()) ||
+			if (((this.field.isTerrain('fishingterrain')) ||
 				target.hasType('Water') || target.baseSpecies.fish) && 
 				(target?.beingCalledBack || target?.switchFlag)) move.accuracy = true;
 		},
 		onTryHit(source, target) {
-			if ((this.field.isTerrain('fishingterrain') && source.isGrounded()) ||
+			if ((this.field.isTerrain('fishingterrain')) ||
 				target.hasType('Water') || target.baseSpecies.fish) target.side.removeSideCondition('fishhook');
 		},
 		condition: {

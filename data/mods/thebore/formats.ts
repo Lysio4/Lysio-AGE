@@ -8,7 +8,7 @@ export const Formats: FormatData[] = [
 
 		mod: 'thebore',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Moves Clause', 'Z-Move Clause', 'Terastal Clause'],
-		banlist: ['AG', 'Uber', 'Arena Trap', 'Moody', 'Shadow Tag', 'Zen Mode', 'King\'s Rock', 'Light Clay', 'Quick Claw', 'Razor Fang', 'Baton Pass'],
+		banlist: ['AG', 'Uber', 'Arena Trap', 'Moody', 'Shadow Tag', 'Zen Mode', 'King\'s Rock', 'Light Clay', 'Quick Claw', 'Razor Fang', 'Baton Pass', 'Hidden Power'],
 		teambuilderFormat: 'National Dex',
 	},
 	{
@@ -18,7 +18,7 @@ export const Formats: FormatData[] = [
 
 		mod: 'thebore',
 		ruleset: ['[Gen 9] NatDex The Bore'],
-		banlist: ['OU', 'UUBL'],
+		banlist: ['OU', 'UUBL', 'Drought'],
 		teambuilderFormat: 'National Dex UU',
 	}
 ];

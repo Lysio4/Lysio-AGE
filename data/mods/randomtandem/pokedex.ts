@@ -708,4 +708,496 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 			]
 		],
 	},
+	fezandipiti: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'gholdengo',
+					item: 'metalcoat',
+					ability: 'goodasgold',
+					teraType: 'Steel',
+				},
+				['nastyplot', 'makeitrain', 'shadowball', 'recover']
+			],
+			[
+				{
+					species: 'mandibuzz',
+					item: 'heavydutyboots',
+					ability: 'unaware',
+					teraType: 'steel',
+				},
+				['foulplay', 'roost', 'uturn', 'toxic']
+			],
+			[
+				{
+					species: 'latios',
+					item: 'souldew',
+					ability: 'Levitate',
+					teraType: 'steel',
+				},
+				['dracometeor', 'lusterpurge', 'recover', 'nastyplot']
+			],
+			[
+				{
+					species: 'slowbro',
+					item: 'heavydutyboots',
+					ability: 'regenerator',
+					teraType: 'steel',
+				},
+				['scald', 'futuresight', 'slackoff', 'teleport']
+			],
+		],
+	},
+	skarmory: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'alomomola',
+					item: 'assaultvest',
+					ability: 'Regenerator',
+					teraType: ['Fairy', 'Grass'],
+				},
+				['scald', 'flipturn'], ['playrough', 'mirrorcoat', 'rapidspin']
+			],
+			[
+				{
+					species: 'zamazenta',
+					item: 'heavydutyboots',
+					ability: 'dauntlessshield',
+					teraType: ['Dark', 'Fighting'],
+				},
+				['crunch', 'closecombat'], ['encore', 'icefang', 'stoneedge']
+			],
+			[
+				{
+					species: 'latias',
+					item: 'leftovers',
+					ability: 'Levitate',
+					teraType: 'Fairy',
+				},
+				['takeheart', 'recover', 'drainingkiss', 'psychic']
+			],
+			[
+				{
+					species: 'trevenant',
+					item: ['leftovers', 'colburberry'],
+					ability: 'Prankster',
+					teraType: ['dark', 'water'],
+				},
+				['woodhammer', 'painsplit'], ['willowisp', 'toxic', 'poltergeist', 'leechseed']
+			],
+		],
+	},
+	clefable: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'gliscor',
+					item: 'toxicorb',
+					ability: 'poisonheal',
+					teraType: ['Fire', 'Water', 'Steel'],
+				},
+				['earthquake', 'protect', 'toxic', 'firelash']
+			],
+			[
+				{
+					species: 'hydreigon',
+					item: 'choicespecs',
+					ability: 'Levitate',
+					teraType: 'steel',
+				},
+				['dracometeor', 'darkpulse', 'flashcannon', 'earthpower']
+			],
+			[
+				{
+					species: 'lunala',
+					item: 'heavydutyboots',
+					ability: 'shadowshield',
+					teraType: ['ghost', 'fairy'],
+				},
+				['moongeistbeam', 'moonlight'], ['futuresight', 'willowisp', 'teleport', 'thunderwave']
+			],
+			[
+				{
+					species: 'mienshao',
+					item: 'lifeorb',
+					ability: 'regenerator',
+					teraType: ['fighting', 'steel'],
+				},
+				['closecombat', 'uturn'], ['knockoff', 'tripleaxel', 'gigatonhammer']
+			],
+		],
+	},
+	ogerpon: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'scizor',
+					item: 'metalcoat',
+					ability: 'technician',
+					teraType: ['Fire', 'Steel'],
+				},
+				['swordsdance', 'bulletpunch'], ['closecombat', 'pinmissile', 'knockoff']
+			],
+			[
+				{
+					species: 'primarina',
+					item: 'leftovers',
+					ability: 'torrent',
+					teraType: ['ghost', 'steel'],
+				},
+				['calmmind', 'moonblast', 'hydropump', 'watershuriken']
+			],
+			[
+				{
+					species: 'dragapult',
+					item: ['leftovers', 'heavydutyboots'],
+					ability: ['infiltrator', 'defiant'],
+					teraType: ['ghost', 'fairy'],
+				},
+				['hex', 'willowisp'], ['dragondarts', 'dracometeor', 'uturn', 'thunderwave']
+			],
+			[
+				{
+					species: 'regieleki',
+					item: ['magnet', 'heavydutyboots'],
+					ability: 'transistor',
+					teraType: ['fire', 'electric'],
+				},
+				['thunderbolt', 'overheat', 'rapidspin', 'voltswitch']
+			],
+		],
+	},
+	pecharunt: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'ironmoth',
+					item: 'heavydutyboots',
+					ability: 'merciless',
+					teraType: ['Fairy', 'Grass'],
+				},
+				['fierydance', 'sludgewave'], ['dazzlinggleam', 'energyball', 'agility']
+			],
+			[
+				{
+					species: 'mandibuzz',
+					item: 'heavydutyboots',
+					ability: 'overcoat',
+					teraType: 'steel',
+				},
+				['jawlock', 'roost'], ['uturn', 'toxic', 'defog']
+			],
+			[
+				{
+					species: 'dudunsparce',
+					item: 'toxicorb',
+					ability: 'poisonheal',
+					teraType: ['ghost', 'poison'],
+				},
+				['facade', 'toxic'], ['roost', 'stealthrock', 'protect']
+			],
+			[
+				{
+					species: 'ironvaliant',
+					item: 'boosterenergy',
+					ability: 'quarkdrive',
+					teraType: ['fairy', 'steel'],
+				},
+				['magicaltorque', 'closecombat', 'knockoff', 'encore']
+			],
+		],
+	},
+	moltres: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'duraludon',
+					item: 'eviolite',
+					ability: 'regenerator',
+					teraType: 'Grass',
+				},
+				['dracometeor', 'stealthrock'], ['flashcannon', 'bodypress', 'thunderwave']
+			],
+			[
+				{
+					species: 'mamoswine',
+					item: 'lifeorb',
+					ability: 'thickfat',
+					teraType: ['ice', 'ground'],
+				},
+				['iciclecrash', 'earthquake', 'iceshard', 'knockoff']
+			],
+			[
+				{
+					species: 'miraidon',
+					item: 'heavydutyboots',
+					ability: 'stickyhold',
+					teraType: ['Electric', 'steel'],
+				},
+				['discharge', 'dragonpulse', 'flashcannon', 'uturn']
+			],
+			[
+				{
+					species: 'chandelure',
+					item: 'choicespecs',
+					ability: 'stormdrain',
+					teraType: ['fire', 'steel'],
+				},
+				['shadowball', 'fireblast', 'energyball', 'trick']
+			],
+		],
+	},
+	arcaninehisui: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'golisopod',
+					item: 'heavydutyboots',
+					ability: 'toughclaws',
+					teraType: 'Fighting',
+				},
+				['firstimpression', 'liquidation', 'leechlife', 'closecombat']
+			],
+			[
+				{
+					species: 'calyrexice',
+					item: 'weaknesspolicy',
+					ability: 'asoneice',
+					teraType: ['water', 'Steel'],
+				},
+				['iciclecrash', 'agility', 'highhorsepower', 'closecombat']
+			],
+			[
+				{
+					species: 'ogerponwellspring',
+					item: 'wellspringmask',
+					ability: 'waterabsorb',
+					teraType: 'water',
+				},
+				['ivycudgel', 'powerwhip'], ['knockoff', 'playrough', 'spikes']
+			],
+			[
+				{
+					species: 'corviknight',
+					item: 'leftovers',
+					ability: 'pressure',
+					teraType: 'dragon',
+				},
+				['bravebird', 'uturn', 'roost', 'whirlwind']
+			],
+		],
+	},
+	ironboulder: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'keldeoresolute',
+					item: 'leftovers',
+					ability: 'justified',
+					teraType: ['steel', 'electric'],
+				},
+				['electrodrift', 'calmmind', 'surf', 'secretsword']
+			],
+			[
+				{
+					species: 'buzzwole',
+					item: ['rockyhelmet', 'leftovers'],
+					ability: 'beastboost',
+					teraType: ['water', 'Steel'],
+				},
+				['roost', 'drainpunch'], ['icepunch', 'spikes', 'earthquake', 'toxic']
+			],
+			[
+				{
+					species: 'chiyu',
+					item: 'heavydutyboots',
+					ability: 'flashfire',
+					teraType: ['grass', 'fighting'],
+				},
+				['darkpulse', 'fireblast', 'nastyplot', 'terablast']
+			],
+			[
+				{
+					species: 'Shaymin-Sky',
+					item: 'heavydutyboots',
+					ability: 'serenegrace',
+					teraType: ['flying', 'steel'],
+				},
+				['bleakwindstorm', 'seedflare', 'earthpower', 'healingwish']
+			],
+		],
+	},
+	tinglu: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'ironhands',
+					item: 'roseliberry',
+					ability: 'levitate',
+					teraType: 'fire',
+				},
+				['drainpunch', 'swordsdance', 'thunderpunch', 'icepunch']
+			],
+			[
+				{
+					species: 'screamtail',
+					item: ['heavydutyboots', 'leftovers'],
+					ability: 'pixilate',
+					teraType: 'Steel',
+				},
+				['boomburst', 'wish', 'protect', 'psychicnoise']
+			],
+			[
+				{
+					species: 'celesteela',
+					item: 'leftovers',
+					ability: 'waterabsorb',
+					teraType: 'dragon',
+				},
+				['heavyslam', 'leechseed', 'flamethrower', 'protect']
+			],
+			[
+				{
+					species: 'Skeledirge',
+					item: 'heavydutyboots',
+					ability: 'unaware',
+					teraType: 'fairy',
+				},
+				['torchsong', 'slackoff', 'infernalparade', 'willowisp']
+			],
+		],
+	},
+	dondozo: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'blissey',
+					item: 'heavydutyboots',
+					ability: 'naturalcure',
+					teraType: ['dark', 'water'],
+				},
+				['calmmind', 'softboiled'], ['seismictoss', 'shadowball', 'toxic']
+			],
+			[
+				{
+					species: 'clodsire',
+					item: ['heavydutyboots', 'leftovers'],
+					ability: ['unaware', 'waterabsorb'],
+					teraType: 'dark',
+				},
+				['recover', 'mortalspin'], ['earthquake', 'poisonjab', 'spikes', 'amnesia']
+			],
+			[
+				{
+					species: 'gliscor',
+					item: 'toxicorb',
+					ability: 'poisonheal',
+					teraType: ['normal', 'water'],
+				},
+				['protect', 'knockoff'], ['earthquake', 'swordsdance', 'facade']
+			],
+			[
+				{
+					species: 'Weezing-Galar',
+					item: 'heavydutyboots',
+					ability: 'Neutralizing Gas',
+					teraType: ['ghost', 'grass'],
+				},
+				['defog', 'shoreup'], ['strangesteam', 'willowisp', 'sludgebomb', 'toxic', 'corrosivegas']
+			],
+		],
+	},
+	hoopaunbound: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'conkeldurr',
+					item: 'flameorb',
+					ability: 'guts',
+					teraType: 'normal',
+				},
+				['closecombat', 'knockoff', 'facade', 'extremespeed']
+			],
+			[
+				{
+					species: 'porygon2',
+					item: 'eviolite',
+					ability: 'regenerator',
+					teraType: ['flying', 'ghost'],
+				},
+				['terablast', 'icebeam', 'recover', 'trickroom']
+			],
+			[
+				{
+					species: 'magearna',
+					item: 'ejectpack',
+					ability: 'magicbounce',
+					teraType: 'water',
+				},
+				['fleurcannon', 'mistyexplosion', 'spikes', 'trickroom']
+			],
+			[
+				{
+					species: 'torkoal',
+					item: 'choicespecs',
+					ability: 'drought',
+					teraType: 'grass',
+				},
+				['eruption', 'weatherball', 'hydrosteam', 'solarbeam']
+			],
+		],
+	},
+	kingambit: {
+		inherit: true,
+		mons: [
+			[
+				{
+					species: 'talonflame',
+					item: 'heavydutyboots',
+					ability: 'illusion',
+					teraType: 'flying',
+				},
+				['swordsdance', 'bravebird'], ['flareblitz', 'roost', 'willowisp', 'taunt']
+			],
+			[
+				{
+					species: 'zoroarkhisui',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: 'ghost',
+				},
+				['nastyplot', 'astralbarrage', 'focusblast', 'willowisp']
+			],
+			[
+				{
+					species: 'ironmoth',
+					item: ['heavydutyboots', 'airballoon'],
+					ability: 'illusion',
+					teraType: ['grass', 'ground', 'fire'],
+				},
+				['fierydance', 'sludgewave'], ['energyball', 'overheat', 'substitute', 'uturn', 'toxicspikes']
+			],
+			[
+				{
+					species: 'primarina',
+					item: 'choicespecs',
+					ability: 'illusion',
+					teraType: ['water', 'fairy', 'psychic'],
+				},
+				['hydropump', 'moonblast', 'icebeam', 'psychic']
+			],
+		],
+	},
 };

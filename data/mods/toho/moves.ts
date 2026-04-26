@@ -462,11 +462,10 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onPrepareHit(target, pokemon, move) {
-			this.field.setWeather('sandstorm');
+			this.actions.useMove("Sandstorm", pokemon);
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "", target);
 		},
-		secondary: null,
 		target: "normal",
 		secondary: {
 			chance: 20,
@@ -483,16 +482,21 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		shortDesc: "User gains +1 attack, becomes Fire-type, slicing moves become Fire-type",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
-		onPrepareHit(target, pokemon, move) {
+		onHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Take Heart", target);
+			pokemon.addVolatile('invokeamaterasu');
 		},
 		secondary: null,
 		target: "self",
 		condition: {
 			onStart(pokemon){
 				pokemon.setType("Fire");
-				//this.add('-start', target, 'typechange', 'Fire');
+				this.add('-start', pokemon, 'typechange', 'Fire');
+			},
+			onRestart(pokemon){
+				pokemon.setType("Fire");
+				this.add('-start', pokemon, 'typechange', 'Fire');
 			},
 			onModifyType(move, pokemon){
 				if (move.flags["slicing"]) {
@@ -514,16 +518,23 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		shortDesc: "User gains +1 speed, becomes Electric-type, slicing moves become Electric-type",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
-		onPrepareHit(target, pokemon, move) {
+		onHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Take Heart", target);
+			pokemon.addVolatile('invokehonoikazuchi');
 		},
 		secondary: null,
 		target: "self",
 		condition: {
 			onStart(pokemon){
 				pokemon.setType("Electric");
-				//this.add('-start', target, 'typechange', 'Electric');
+				this.add('-start', pokemon, 'typechange', 'Electric');
+				pokemon.removeVolatile('invokeamaterasu');
+			},
+			onRestart(pokemon){
+				pokemon.setType("Electric");
+				this.add('-start', pokemon, 'typechange', 'Electric');
+				pokemon.removeVolatile('invokeamaterasu');
 			},
 			onModifyType(move, pokemon){
 				if (move.flags["slicing"]) {
@@ -545,17 +556,27 @@ export const Moves: {[moveid: string]: ModdedMoveData} = {
 		shortDesc: "User's ability becomes Magic Bounce, becomes Ice-type, slicing moves become Ice-type",
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
-		onPrepareHit(target, pokemon, move) {
+		onHit(target, pokemon, move) {
 			this.attrLastMove('[still]');
 			this.add('-anim', pokemon, "Take Heart", target);
+			pokemon.addVolatile('invokeishikoridome');
 		},
 		secondary: null,
 		target: "self",
 		condition: {
 			onStart(pokemon){
 				pokemon.setType("Ice");
-				pokemon.setAbility('magicguard', pokemon);
-				//this.add('-start', target, 'typechange', 'Ice');
+				pokemon.setAbility('magicbounce', pokemon);
+				this.add('-start', pokemon, 'typechange', 'Ice');
+				pokemon.removeVolatile('invokeamaterasu');
+				pokemon.removeVolatile('invokehonoikazuchi');
+			},
+			onRestart(pokemon){
+				pokemon.setType("Ice");
+				pokemon.setAbility('magicbounce', pokemon);
+				this.add('-start', pokemon, 'typechange', 'Ice');
+				pokemon.removeVolatile('invokeamaterasu');
+				pokemon.removeVolatile('invokehonoikazuchi');
 			},
 			onModifyType(move, pokemon){
 				if (move.flags["slicing"]) {

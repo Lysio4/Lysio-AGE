@@ -46,26 +46,23 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	},	
 	holydodge: { 
 		onStart(pokemon){
-			pokemon.addVolatile('holydodge');
-			this.effectState.holydodge = true;
+			this.effectState.holydodge = 0;
 		},
-		condition: {
-			onSourceAfterFaint(length, target, source, effect) {
-				if (effect && effect.effectType === 'Move' && !this.effectState.holydodge) {
-					this.effectState.holydodge = true;
-					this.add('-message', `Holy Dodge is active!`);
-				}
-			},
-			onInvulnerability(pokemon, target, source, move){
-				if(this.effectState.holydodge){
-					this.add('-message', `${pokemon.name} dodged the attack with Holy Dodge!`);
-					pokemon.removeVolatile('holydodge');
-					return false;
-				}
-			},
-			onSwitchIn(pokemon) {
-				delete this.effectState.holydodge;
-			},
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move' && this.effectState.holydodge === 0) {
+				this.effectState.holydodge = 1;
+				this.add('-message', `Holy Dodge is active!`);
+			}
+		},
+		onInvulnerability(pokemon, target, source, move){
+			if(this.effectState.holydodge === 1){
+				this.add('-message', `${pokemon.name} dodged the attack with Holy Dodge!`);
+				this.effectState.holydodge = 2;
+				return false;
+			}
+		},
+		onSwitchIn(pokemon) {
+			this.effectState.holydodge = 0;
 		},
 		flags: {},
 		name: "Holy Dodge",
