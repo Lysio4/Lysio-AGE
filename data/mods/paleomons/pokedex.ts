@@ -752,4 +752,28 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		weightkg: 282.8,
 		prevo: "Rhydon-Generator",
 	},
+	woolefant: {
+		num: 86,
+		name: "Woolefant",
+		types: ["Ground", "Fairy"],
+		baseStats: {hp: 100, atk: 75, def: 95, spa: 95, spd: 70, spe: 76},
+		abilities: {0: "Tangling Hair", 1: "Overcoat", H: "Sand Force"},
+		weightkg: 320.0,
+	},
+	felice: {
+		num: 87,
+		name: "Felice",
+		types: ["Ice", "Fighting"],
+		baseStats: {hp: 75, atk: 80, def: 80, spa: 105, spd: 70, spe: 112},
+		abilities: {0: "Hyper Cutter", 1: "Technician", H: "Slush Rush"},
+		weightkg: 43.8,
+	},
+	letherium: {
+		num: 88,
+		name: "Letherium",
+		types: ["Normal", "Ground"],
+		baseStats: {hp: 101, atk: 120, def: 86, spa: 88, spd: 105, spe: 50},
+		abilities: {0: "Comatose"},
+		weightkg: 238.8,
+	},
 }

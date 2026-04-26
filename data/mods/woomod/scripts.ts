@@ -232,6 +232,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 		this.modData("Learnsets", "wooperpaldea").learnset.woopout = ["9L1"];
 		// Hoothoot
 		delete this.modData('Learnsets', 'hoothoot').learnset.hurricane;
+		this.modData("Learnsets", "hoothoot").learnset.synchronoise = ["9L1"];
 		// Raboot-Sinnoh
 		this.modData("Learnsets", "rabootsinnoh").learnset.frigidlyslide = ["9L1"];
 		this.modData("Learnsets", "rabootsinnoh").learnset.chillyreception = ["9L1"];
@@ -319,7 +320,7 @@ export const Scripts: {[k: string]: ModdedBattleScriptsData} = {
 		this.modData("Learnsets", "honedge").learnset.tackle = ["9L1"];
 		this.modData("Learnsets", "honedge").learnset.toxic = ["9L1"];
 		this.modData("Learnsets", "honedge").learnset.wideguard = ["9L1"];
-//		this.modData("Learnsets", "honedge").learnset.aegislash = ["9L1"];
+		this.modData("Learnsets", "honedge").learnset.aegislash = ["9L1"];
 		// Roselia
 		this.modData("Learnsets", "roselia").learnset.absorb = ["9L1"];
 		this.modData("Learnsets", "roselia").learnset.aromatherapy = ["9L1"];

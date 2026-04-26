@@ -553,4 +553,34 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 			return true;
 		},
 	},
+	/*
+	Fatalis Orbs
+	*/
+	honey: {
+		name: "Honey",
+		fling: { basePower: 30 },
+		num: -5,
+		gen: 9,
+		rating: 3,
+		shortDesc: "Restores 1/3 max HP at 25% HP or less once. -1 Spe if hit by Knock Off.",
+		onUpdate(pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 4) {
+				if (pokemon.useItem()) {
+					this.heal(pokemon.baseMaxhp / 3);
+				}
+			}
+		},
+		onTakeItem(item, pokemon, source) {
+			if (!pokemon.hp) return false;
+			if (source && source.hasAbility('honeygather')) {
+				return false;
+			}
+			if (this.activeMove && ['knockoff', 'thief', 'switcheroo', 'trick'].includes(this.activeMove.id)) {
+				this.boost({ spe: -1 }, pokemon);
+				this.add('-activate', pokemon, 'item: Honey');
+				return true;
+			}
+			return true;
+		},
+	},
 }

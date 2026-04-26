@@ -274,7 +274,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		shortDesc: "If the target is Steel-type, lowers its Sp. Def by 1.",
 		pp: 5,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, wind: 1},
+		flags: {protect: 1, mirror: 1},
 		onPrepareHit(target, source, move) {
 		    this.attrLastMove('[still]');
 		    this.add('-anim', source, "Steel Beam", target);
@@ -286,6 +286,32 @@ export const Moves: {[moveid: string]: MoveData} = {
 		target: "normal",
 		type: "Rock",
 		contestType: "Cool",
+	},
+	chishift: {
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Chi Shift",
+		shortDesc: "Swaps all changes between the target's Atk and SpA.",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onHit(target, source) {
+			const targetBoosts: SparseBoostsTable = {};
+			const atkSpa: BoostID[] = ['atk', 'spa'];
+
+			for (const stat of atkSpa) {
+				targetBoosts[stat] = target.boosts[stat];
+			}
+
+			target.setBoost({atk: targetBoosts.spa, spa: targetBoosts.atk});
+
+			this.add('-setboost', target, 'atk', targetBoosts.spa ?? 0);
+			this.add('-setboost', target, 'spa', targetBoosts.atk ?? 0);
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fighting",
 	},
 	
 	//edited vanilla moves
