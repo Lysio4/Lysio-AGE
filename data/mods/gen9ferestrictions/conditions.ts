@@ -37,6 +37,15 @@ export const Conditions: import('../../../sim/dex-conditions').ModdedConditionDa
 	},
 	par: {
 		inherit: true,
+		onModifySpePriority: -101,
+		onModifySpe(spe, pokemon) {
+			// Paralysis occurs after all other Speed modifiers, so evaluate all modifiers up to this point first
+			spe = this.finalModify(spe);
+			if (!pokemon.hasAbility('quickfeet') && !pokemon.hasAbility('quickfat')) {
+				spe = Math.floor(spe * 50 / 100);
+			}
+			return spe;
+		},
 		onBeforeMove(pokemon) {
 			if (this.randomChance(1, 8)) {
 				this.add('cant', pokemon, 'par');
