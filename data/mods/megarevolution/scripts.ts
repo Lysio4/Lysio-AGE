@@ -14,5 +14,9 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData("Learnsets", "charizard").learnset.thrash = ["9L1"];
 		this.modData("Learnsets", "charizard").learnset.stompingtantrum = ["9L1"];
 		this.modData("Learnsets", "charizard").learnset.heavyslam = ["9L1"];
+		this.modData("Learnsets", "abomasnow").learnset.nastyplot = ["9L1"];
+		this.modData("Learnsets", "abomasnow").learnset.flipturn = ["9L1"];
+		this.modData("Learnsets", "abomasnow").learnset.slackoff = ["9L1"];
+		this.modData("Learnsets", "abomasnow").learnset.terrainpulse = ["9L1"];
 	},
 };
