@@ -112,10 +112,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},*/
-	/**chimechite: {
+	chimechite: {
 		inherit: true,
 		isNonstandard: null,
-	},*/
+	},
 	/**absolitez: {
 		inherit: true,
 		isNonstandard: null,
