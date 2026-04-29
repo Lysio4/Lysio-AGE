@@ -23,10 +23,10 @@ const viabilityList9 = [
 ];
 const megaViabilityList9 = [
 	"araquanidmega", "arbolivamega", "armarougemega", "bastiodonmega", "bibarelmega", "chandeluremegay", "charizardmegay", "cinderacemega", "clefablemegay", 
-	"conkeldurrmega", "corviknightmega", "dhelmisemega", "dianciemega", "dragalgemegay",	"eelektrossmegay", "empoleonmega", "falinksmega", "flygonmega", 
-	"froslassmegay", "garbodormega", "grumpigmega", "hawluchamega", "honchkrowmega", "hydreigonmega", "infernapemega", "inteleonmega", "kleavormega", "krookodilemega", "lanturnmega", 
-	"latiosmega", "lopunnymega", "lurantismega", "luxraymega", "lycanrocmega", "magmortarmega", "mausholdfourmega", "mausholdmega", "meganiummega", "meowsticmega", "miloticmega", "mimikyumega", 
-	"mimikyumegabusted", "nidoqueenmega", "noivernmega", "orbeetlemega", "quaquavalmega", "rabscamega", "raichumega", "regicemega", "reuniclusmega", "scizormega", "sirfetchdmega", 
+	"conkeldurrmega", "corviknightmega", "dhelmisemega", "dianciemega", "dragalgemegay", "eelektrossmegay", "empoleonmega", "falinksmega", "flygonmega", 
+	"froslassmegay", "garbodormega", "grumpigmega", "hawluchamega", "honchkrowmega", "hydreigonmega", "infernapemega", "inteleonmega", "kleavormega", "krookodilemega", 
+	"lanturnmega", "latiosmega", "lopunnymega", "lurantismega", "luxraymega", "lycanrocmega", "magmortarmega", "mausholdfourmega", "mausholdmega", "meganiummega", /*"meowsticmega",*/
+	 "miloticmega", "mimikyumega", "mimikyumegabusted", "nidoqueenmega", "noivernmega", "orbeetlemega", "quaquavalmega", "rabscamega", "raichumega", "regicemega", "reuniclusmega", "scizormega", "sirfetchdmega", 
 	"skeledirgemega", "slowkingmega", "staraptormega", "starmiemega", "starmiemegay", "stoutlandmega", "sylveonmega", "talonflamemega", "typhlosionmega", "tyrantrummega", 
 	"vanilluxemega", "wailordmega",
 ];

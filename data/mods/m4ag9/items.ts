@@ -112,10 +112,10 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},*/
-	chimechite: {
+	/**chimechite: {
 		inherit: true,
 		isNonstandard: null,
-	},
+	},*/
 	/**absolitez: {
 		inherit: true,
 		isNonstandard: null,
@@ -140,7 +140,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},*/
-	golurkite: {
+	/**golurkite: {
 		inherit: true,
 		isNonstandard: null,
 	},
@@ -151,7 +151,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	crabominite: {
 		inherit: true,
 		isNonstandard: null,
-	},
+	},*/
 	/**golisopite: {
 		inherit: true,
 		isNonstandard: null,
@@ -164,14 +164,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},*/
-	scovillainite: {
+	/**scovillainite: {
 		inherit: true,
 		isNonstandard: null,
 	},
 	glimmoranite: {
 		inherit: true,
 		isNonstandard: null,
-	},
+	},*/
 	/**tatsugirinite: {
 		inherit: true,
 		isNonstandard: null,

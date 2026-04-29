@@ -20,7 +20,7 @@ const megaViabilityList = [
 	"araquanidmega", "bastiodonmega", "bibarelmega", "chandeluremegay", "conkeldurrmega", "corviknightmega", "dhelmisemega", "dragalgemegay",
 	"eelektrossmegay", "falinksmega", "flygonmega", "froslassmegay", "garbodormega", "hawluchamegay", "honchkrowmega", "infernapemega", "inteleonmega",
 	"krookodilemega", "lanturnmega", "latiasmega", "lopunnymega", "lurantismega", "luxraymega", "lycanrocmega", "magmortarmega", "medichammega",
-	"meowsticmega", "mimikyumega", "mimikyumegabusted", "nidoqueenmega", "noivernmega", "orbeetlemega", "raichumega", "regicemega", "reuniclusmega",
+	/*"meowsticmega",*/ "mimikyumega", "mimikyumegabusted", "nidoqueenmega", "noivernmega", "orbeetlemega", "raichumega", "regicemega", "reuniclusmega",
 	"scizormega", "sirfetchdmega", "slowkingmega", "staraptormega", "starmiemegay", "stoutlandmega", "swampertmega", "talonflamemega",
 	"typhlosionmega", "tyranitarmega", "tyrantrummega", "vanilluxemega", "wailordmega",
 ];
