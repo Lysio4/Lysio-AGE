@@ -2545,6 +2545,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 7,
 		rating: 0,
 	},
+	golurkite: {
+		name: "Golurkite",
+		spritenum: 0,
+		megaStone: "Golurk-Mega",
+		megaEvolves: "Golurk",
+		itemUser: ["Golurk"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2594,
+		gen: 9,
+		isNonstandard: null,
+	},
 	grassgem: {
 		name: "Grass Gem",
 		spritenum: 172,
