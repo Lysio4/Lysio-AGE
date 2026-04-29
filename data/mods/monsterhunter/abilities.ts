@@ -402,24 +402,19 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		shortDesc: "Slicing moves: +1 priority at full HP, always crit at 1/3 HP or less.",
 	},
 	bewitchingtail: {
-    onBasePower(basePower, attacker, defender, move) {
-        if (defender?.status === 'slp') {
-            return this.chainModify(0x1333); // 1.2x
-        }
-    },
-    onModifySpe(spe, pokemon, target, move) {
-        if (target && target.status === 'slp') {
-            return this.chainModify(0x1800); // 1.5x
-        }
-    },
-    onSourceModifyDamage(damage, source, target, move) {
-        if (source.status === 'slp') {
-            return this.chainModify(0x0CCD); // 0.8x
-        }
-    },
-    flags: {},
-    name: "Bewitching Tail",
-    shortDesc: "Targeting drowsy foes: Offenses 1.2x, Spe 1.5x | From drowsy foes: 0.8x Damage.",
+		onModifySpe(spe, pokemon, target, move) {
+			if (target && target.status === 'slp') {
+				return this.chainModify(0x1800); // 1.5x
+			}
+		},
+		onSourceModifyDamage(damage, source, target, move) {
+			if (source.status === 'slp') {
+				return this.chainModify(0x0C00); // 0.75x
+			}
+		},
+		flags: {},
+		name: "Bewitching Tail",
+		shortDesc: "Targeting drowsy foes: Spe 1.5x | From drowsy foes: 0.75x Damage.",
 	},
 	biosynthesis: {
 		onSwitchIn(pokemon) {

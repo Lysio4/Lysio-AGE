@@ -34,10 +34,15 @@ export const Conditions: { [k: string]: ConditionData; } = {
 				this.add('-end', target, 'Nightmare', '[silent]');
 			}
 		},
-		OnBasePower(basePower, attacker, defender, move) {
-			if (defender.status === 'slp') {
-				return this.chainModify(0x1333);
+		onSourceModifyDamage(damage, source, target, move) {
+			// Base 1.2x damage taken
+			let mod = this.chainModify(0x1333); // 1.2x
+			// If attacker has Bewitching Tail → total becomes 1.4x
+			if (source.hasAbility('bewitchingtail')) {
+				// 1.4 / 1.2 = 1.166666... → 0x12AA
+				mod = this.chainModify(0x12AA);
 			}
+			return mod;
 		},
 		onModifyMove(move, pokemon) {
 			if (move.multihit) delete move.multihit;
