@@ -144,7 +144,7 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},
-	meowsticite: {
+	/**meowsticite: {
 		inherit: true,
 		isNonstandard: null,
 	},

@@ -3943,20 +3943,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 3,
 		rating: 3,
 	},
-	meowsticite: {
-		name: "Meowsticite",
-		spritenum: 0,
-		megaStone: ["Meowstic-M-Mega", "Meowstic-F-Mega"],
-		megaEvolves: ["Meowstic", "Meowstic-F"],
-		itemUser: ["Meowstic", "Meowstic-F"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves!.includes(source.baseSpecies.baseSpecies)) return false;
-			return true;
-		},
-		num: 2594,
-		gen: 9,
-		isNonstandard: null,
-	},
 	metagrossite: {
 		name: "Metagrossite",
 		spritenum: 618,

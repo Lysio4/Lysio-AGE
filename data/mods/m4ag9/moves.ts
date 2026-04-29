@@ -1,8 +1,4 @@
 export const Moves: {[moveid: string]: ModdedMoveData} = {
-	lightofruin: {
-		inherit: true,
-		isNonstandard: null,
-	},
 	// Down-to-Earth
 	electricterrain: {
 		inherit: true,
