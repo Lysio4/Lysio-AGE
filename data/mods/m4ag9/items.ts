@@ -147,11 +147,11 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 	/**meowsticite: {
 		inherit: true,
 		isNonstandard: null,
-	},
-	/**crabominite: {
+	},*/
+	crabominite: {
 		inherit: true,
 		isNonstandard: null,
-	},*/
+	},
 	/**golisopite: {
 		inherit: true,
 		isNonstandard: null,
@@ -164,14 +164,14 @@ export const Items: {[itemid: string]: ModdedItemData} = {
 		inherit: true,
 		isNonstandard: null,
 	},*/
-	/**scovillainite: {
+	scovillainite: {
 		inherit: true,
 		isNonstandard: null,
 	},
-	/**glimmoranite: {
+	glimmoranite: {
 		inherit: true,
 		isNonstandard: null,
-	},*/
+	},
 	/**tatsugirinite: {
 		inherit: true,
 		isNonstandard: null,

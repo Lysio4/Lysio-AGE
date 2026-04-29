@@ -1248,6 +1248,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: 1885,
 		gen: 9,
 	},
+	crabominite: {
+		name: "Crabominite",
+		spritenum: 0,
+		megaStone: "Crabominable-Mega",
+		megaEvolves: "Crabominable",
+		itemUser: ["Crabominable"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2595,
+		gen: 9,
+		isNonstandard: "Future",
+	},
 	crackedpot: {
 		name: "Cracked Pot",
 		spritenum: 719,
@@ -2535,6 +2549,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	glimmoranite: {
+		name: "Glimmoranite",
+		spritenum: 0,
+		megaStone: "Glimmora-Mega",
+		megaEvolves: "Glimmora",
+		itemUser: ["Glimmora"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2600,
+		gen: 9,
+		isNonstandard: "Future",
+	},
 	goldbottlecap: {
 		name: "Gold Bottle Cap",
 		spritenum: 697,
@@ -2557,7 +2585,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 2594,
 		gen: 9,
-		isNonstandard: null,
+		isNonstandard: "Future",
 	},
 	grassgem: {
 		name: "Grass Gem",
@@ -5561,6 +5589,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: 232,
 		gen: 2,
+	},
+	scovillainite: {
+		name: "Scovillainite",
+		spritenum: 0,
+		megaStone: "Scovillain-Mega",
+		megaEvolves: "Scovillain",
+		itemUser: ["Scovillain"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: 2599,
+		gen: 9,
+		isNonstandard: "Future",
 	},
 	scraftinite: {
 		name: "Scraftinite",
