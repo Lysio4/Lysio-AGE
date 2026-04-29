@@ -409,12 +409,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		},
 		onSourceModifyDamage(damage, source, target, move) {
 			if (source.status === 'slp') {
-				return this.chainModify(0x0C00); // 0.75x
+				return this.chainModify(0.8);
 			}
 		},
 		flags: {},
 		name: "Bewitching Tail",
-		shortDesc: "Targeting drowsy foes: Spe 1.5x | From drowsy foes: 0.75x Damage.",
+		shortDesc: "Targeting drowsy foes: Spe 1.5x | From drowsy foes: 20% Less Damage.",
 	},
 	biosynthesis: {
 		onSwitchIn(pokemon) {
