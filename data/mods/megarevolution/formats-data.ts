@@ -4873,4 +4873,16 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	pikaraichu: {
 		tier: "OU",
 	},
+	cryognaw: {
+		tier: "OU",
+	},
+	snorest: {
+		tier: "OU",
+	},
+	freezeress: {
+		tier: "OU",
+	},
+	crabarbarian: {
+		tier: "OU",
+	},
 };

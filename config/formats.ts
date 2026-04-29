@@ -180,7 +180,6 @@ import { Formats as PokemonThrone               } from '../data/mods/pokemonthro
 import { Formats as MoreBalancedHackmons        } from '../data/mods/morebalancedhackmons/formats';
 import { Formats as NaturalSelection            } from '../data/mods/naturalselection/formats';
 import { Formats as NotMyType                   } from '../data/mods/notmytype/formats';
-import { Formats as NukeButtons                 } from '../data/mods/nukebuttons/formats';
 import { Formats as OUTheorymons                } from '../data/mods/outheorymons/formats';
 import { Formats as Paleomons                   } from '../data/mods/paleomons/formats';
 import { Formats as Patratdex                   } from '../data/mods/patratdex/formats';
@@ -244,7 +243,7 @@ import { Formats as Woomod                      } from '../data/mods/woomod/form
 import { Formats as Worldbuilding               } from '../data/mods/worldbuilding/formats';
 //import { Formats as YayaMons                    } from '../data/mods/yayamons/formats';
 
-export const Formats: FormatList = [
+export const Formats: import('../sim/dex-formats').FormatList = [
 	///////////////////////////////////////////////////////////////
 	///////////////////// Gen 9 Pet Mods //////////////////////////
 	///////////////////////////////////////////////////////////////
@@ -405,7 +404,6 @@ export const Formats: FormatList = [
 	...MaadowrLostZone,
 	...MegaMania,
 	...gen1Metronome,
-	...NukeButtons,
 	...Solopet,
 	...gen1Moonside,
 	...TheBore,
