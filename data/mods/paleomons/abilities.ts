@@ -7,7 +7,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		onPrepareHit(target, source, move) {
 			if (move.type === "Electric") {
-				source.addVolatile('roost'),
+				source.addVolatile('roost');
 			}
 		},
 		flags: {},
