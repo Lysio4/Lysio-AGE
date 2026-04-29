@@ -34,8 +34,10 @@ export const Conditions: { [k: string]: ConditionData; } = {
 				this.add('-end', target, 'Nightmare', '[silent]');
 			}
 		},
-		onSourceModifyDamage(damage, source, target, move) {
-			return this.chainModify(0x1333);
+		OnBasePower(basePower, attacker, defender, move) {
+			if (defender.status === 'slp') {
+				return this.chainModify(0x1333);
+			}
 		},
 		onModifyMove(move, pokemon) {
 			if (move.multihit) delete move.multihit;

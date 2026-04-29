@@ -1679,7 +1679,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 			if (rebel) {
 				this.debug('Raging Rebel Attack boost');
-				this.add('-activate', attacker, 'ability: Raging Rebel');
 				return this.chainModify(1.3);
 			}
 		},
