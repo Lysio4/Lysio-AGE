@@ -5632,7 +5632,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			weatherball: ["9M"],
 		},
 	},
-	ragingbolt: {
+	stratusaur: {
 		learnset: {
 			aeroblast: ["9L1"],
 			airslash: ["9L1"],

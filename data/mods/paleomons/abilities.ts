@@ -2,6 +2,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 	
 	//new abilities
 	electrooverload: {
+		shortDesc: "Electric Surge + lands before using Electric-type moves (Roost effect).",
 		onStart(source) {
 			this.field.setTerrain('electricterrain');
 		},
