@@ -4885,4 +4885,13 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	crabarbarian: {
 		tier: "OU",
 	},
+	wrecksadrill: {
+		tier: "OU",
+	},
+	kandelabrum: {
+		tier: "OU",
+	},
+	goldeliath: {
+		tier: "OU",
+	},
 };
